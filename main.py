@@ -5,7 +5,7 @@ import string
 
 # Persiapan Argument Parser
 parser = ArgumentParser(
-    prog="Generator Password",
+    prog="Password Generator",
     description="Menghasilkan password dengan menggunakan alat ini.",
 )
 
