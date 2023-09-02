@@ -43,8 +43,9 @@ parser.add_argument("-o", "--file-output")
 # Parsing argumen dari baris perintah.
 args = parser.parse_args()
 
-# Daftar password
+# Variabel untuk simpan daftar password
 passwords = []
+
 # Melakukan perulangan sejumlah jumlah password.
 for _ in range(args.jumlah):
     if args.total_panjang:
