@@ -4,10 +4,10 @@ This is a Python script that generates passwords based on specified criteria. It
 
 ## How to use
 
-python.exe password_generator.py [-h] [-n ANGKA] [-l HURUF-KECIL] [-u HURUF-BESAR] [-s KARAKTER-KHUSUS] [-t TOTAL-PANJANG] [-a JUMLAH] [-o FILE-OUTPUT]
+python.exe password-generator.py [-h] [-n ANGKA] [-l HURUF-KECIL] [-u HURUF-BESAR] [-s KARAKTER-KHUSUS] [-t TOTAL-PANJANG] [-a JUMLAH] [-o FILE-OUTPUT]
 
 ```bash
-python password_generator.py -n 2 -l 3 -u 1 -s 1 -t 10 -a 2 -o passwords.txt
+python password-generator.py -n 2 -l 3 -u 1 -s 1 -t 10 -a 2 -o passwords.txt
 
 ```
 
