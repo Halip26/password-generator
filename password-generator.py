@@ -46,7 +46,7 @@ args = parser.parse_args()
 # Variabel untuk simpan daftar password
 passwords = []
 
-# Melakukan perulangan sejumlah jumlah password.
+# Melakukan perulangan sebanyak jumlah password.
 for _ in range(args.jumlah):
     if args.total_panjang:
         # Menghasilkan password acak dengan panjang total_panjang
