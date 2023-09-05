@@ -40,6 +40,13 @@ parser.add_argument(
 parser.add_argument("-a", "--jumlah", default=1, type=int)
 parser.add_argument("-o", "--file-output")
 
+# Contoh pengunaannya
+parser.add_argument(
+    "-e",
+    "--example-on-shell",
+    help="python.exe password-generator.py -n 2 -l 3 -u 1 -s 1 -t 10 -a 2 -o passwords.txt",
+)
+
 # Parsing argumen dari baris perintah.
 args = parser.parse_args()
 
