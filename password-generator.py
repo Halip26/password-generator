@@ -73,13 +73,12 @@ for _ in range(args.jumlah):
         for _ in range(args.angka):
             password.append(secrets.choice(string.digits))
 
-        # Jika / berapa banyak huruf besar yang harus dimasukkan dalam password
-        for _ in range(args.huruf_besar):
-            password.append(secrets.choice(string.ascii_uppercase))
-
         # Jika / berapa banyak huruf kecil yang harus dimasukkan dalam password
         for _ in range(args.huruf_kecil):
             password.append(secrets.choice(string.ascii_lowercase))
+        # Jika / berapa banyak huruf besar yang harus dimasukkan dalam password
+        for _ in range(args.huruf_besar):
+            password.append(secrets.choice(string.ascii_uppercase))
 
         # Jika / berapa banyak karakter khusus yang harus dimasukkan dalam password
         for _ in range(args.karakter_khusus):
@@ -96,8 +95,8 @@ for _ in range(args.jumlah):
 
 # Menyimpan password ke file .txt.
 if args.file_output:
-    with open(args.file_output, "w") as f:
-        f.write("\n".join(passwords))
+    with open(args.file_output, "w") as file:
+        file.write("\n".join(passwords))
 
 # Menampilkan password di layar
 print("\n".join(passwords))
